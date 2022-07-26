@@ -5,13 +5,13 @@
        //if (this is true) {do this code}
        //if favoriteShoe is Euphoria, write "good choice!"
        if (favoriteShow == "euphoria"){
-        document.write("Good Choice!");
-     } else if (favoriteShow == "first kill") {
-        document.write("Awesome pick!");
+        document.write("<br> Good Choice!");
+     } else if (favoriteShow == "<br> first kill") {
+        document.write("<br> Awesome pick!");
      } else if (favoriteShow == "ozark") {
-        document.write("wow, solid choice!");
+        document.write("<br> wow, solid choice!");
      } else {
-        document.write("You did not pick any of the shows recommended on this page")
+        document.write("You did not pick any of the shows recommended on this page ")
      } 
         
      let rating = prompt("How would you rate this webpge (1-5)?");
@@ -19,21 +19,11 @@
      //console will tell you whether "rating" is a string or a number
      rating = parseInt(rating);
      //parseInt will transform the string, "rating" into a number
-     if (rating == 5) {
-        document.write("You rated this page five stars!");
-     } 
-     if (rating == 4) {
-        document.write("You rated this page four stars!");
-     }
-     if (rating == 3) {
-        document.write("You rated this page three stars!");
-     }
-     if (rating == 2) {
-        document.write("You rated this page two stars!");
-     }
      if (rating == 1) {
-        document.write("You rated this page one star!");
+        document.write("<br> You rated this page one star!");
      }
      else {
-        document.write("you rated this page " + rating);
+        document.write(`<br> you rated this page ${rating} stars`);
      }
+
+     confirm("Press a button!\nEither OK or Cancel.");
