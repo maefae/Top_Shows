@@ -1,4 +1,6 @@
-        let favoriteShow = prompt("What was your favorite tv series in 2022? ex: first kill, ozark, euphoria");
+       //example of global variables are not inside functions
+      
+       let favoriteShow = prompt("What was your favorite tv series in 2022? ex: first kill, ozark, euphoria");
         console.log(favoriteShow);
         document.write('<h3>'+favoriteShow+'</h3>');
 
@@ -27,3 +29,46 @@
      }
 
      confirm("Press a button!\nEither OK or Cancel.");
+
+     //function
+     function customMessage(){
+      var answerOne = prompt("Trivia Game: Who is the actress that plays Rue Bennett on Eupho")
+      var answerOne = answerOne.toLowerCase();
+
+      if (answerOne === "Zendaya" || answerOne === "Z") {
+         alert("You are correct")
+      } else {
+         alert("You are wrong")
+      }
+      
+   } 
+   customMessage();
+   console.log(message);
+
+//function
+function customMessage(){
+   var answerOne = prompt("Trivia Game: Who is the actress that plays Rue Bennett on Eupho")
+   var answerOne = answerOne.toLowerCase();
+
+   if (answerOne === "Zendaya" || answerOne === "Z") {
+      alert("You are correct")
+   } else {
+      alert("You are wrong")
+   }
+   
+} 
+customMessage();
+console.log(message);
+
+/*
+
+ //new function
+ function userAge(){
+    let age = prompt("how old are u");
+    if (age == 33) {
+        Document.write("You are as old as Kassie");
+    } else {
+        document.write("You are " + age + " years old.")
+    }
+}
+userAge();
