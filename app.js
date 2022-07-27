@@ -60,15 +60,12 @@ function customMessage(){
 customMessage();
 console.log(message);
 
-/*
-
  //new function
  function userAge(){
     let age = prompt("how old are u");
-    if (age == 33) {
-        Document.write("You are as old as Kassie");
+    if (age == 23) {
+        Document.write("You are as old as ME");
     } else {
         document.write("You are " + age + " years old.")
     }
 }
-userAge();

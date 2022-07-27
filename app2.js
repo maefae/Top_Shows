@@ -14,14 +14,16 @@ askFavorite();
 
 function customMessage(){
     let answerOne = prompt("Trivia Game: Who is the actress that plays Rue Bennett on Euphoria");
-    if (answerOne === "Zendaya" || answerOne === "Z") {
+    if (answerOne === "Zendaya" || answerOne === "z" || answerOne === "zendaya") {
        alert("You are correct")
     } else {
-       alert("You are incorrect")
+       alert("You are incorrect. Try again")
+       customMessage();
     } 
 }
 customMessage();
 
+//Console will work like this, or you can just take away line 39,41,& 42 and take the prompt outside of the function. maintaining the orig. askRating();
 function askRating(){
     let rating = prompt("How would you rate this webpge (1-5)?");
      console.log(typeof(rating));
@@ -34,5 +36,33 @@ function askRating(){
      else {
         document.write('<h3>'+`<br> you rated this page ${rating} stars`+'</h3>');
      }
+
+     return rating;
 }
-askRating();
+     let asksRating = askRating();
+     console.log("this is a result of a function: ", asksRating);
+
+     
+//givenName is the parameter
+     function printName(givenName){
+        console.log("the name you gave me is:", givenName);
+     }
+     //argument (passing rules)
+    printName("Megan");
+    printName("Charlotte");
+    printName("Cameron");
+    printName("Candace");
+
+    /*
+    function userAge(){
+        let age = prompt("how old are u");
+        if (age == 23) {
+            Document.write("You are as old as ME");
+        } else {
+            document.write("You are " + age + " years old.")
+        }
+    }
+   userAge();
+    */
+    
+   
