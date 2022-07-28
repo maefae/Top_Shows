@@ -47,3 +47,8 @@ body {
     h3 {
         color:white;
     }
+
+    .star-pic {
+        height: 50px;
+        width: 72px;
+    }
